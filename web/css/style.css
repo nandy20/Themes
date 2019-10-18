@@ -368,6 +368,14 @@ transition: all 0.7s ease;
     font-family: 'Sail-Regular';
     text-transform: capitalize;
 }
+.about-head h2:hover {
+     animation: text-effect 1s;
+}
+@keyframes text-effect {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
 .about-head p {
     justify-content:center;
     letter-spacing: 1px;
