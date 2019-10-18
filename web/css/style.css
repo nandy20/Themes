@@ -318,7 +318,36 @@ transition: all 0.7s ease;
 .about-head{
     justify-content: center;
 }
+.hovereffect {
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+.hovereffect:hover img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
 
+.read{
+    text-decoration: none;
+    color: #652840;
+}
+
+.about-grids img{
+    height: 250px;
+    width: 300px;
+    border-radius: 35px;
+    box-shadow: 1px 1px 15px 1px #652840;
+}
 .about-head h2 {
     font-size: 3.5em;
     width: 35%;
@@ -339,9 +368,7 @@ transition: all 0.7s ease;
     line-height: 30px;
     margin-left: 5%;
     margin-right: 5%;
-}
-.about-grids {
-    margin-top: 3em;
+    margin-bottom: 3em;
 }
 .hot-offer {
     text-align: center;
