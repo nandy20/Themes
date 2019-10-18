@@ -379,6 +379,10 @@ transition: all 0.7s ease;
     margin-bottom: 3em;
 }
 
+.portfolio{
+    margin-left:13%;
+    justify-content: center;
+}
 .portfolio h2{
     text-align: center;
 }
@@ -399,6 +403,11 @@ transition: all 0.7s ease;
     padding-left: 8px;
     border-radius: 25px;
     color: white;
+}
+.port-img img{
+    height: 300px;
+    width: 350px;
+    margin-top: 3%;
 }
 .hot-offer {
     text-align: center;
