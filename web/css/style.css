@@ -40,7 +40,7 @@ body{
 	font-family: 'OpenSans-Regular'
 }
 .header {
-    background: url(../images/banner2.jpg)no-repeat 0px 0px;
+    background: url(../images/slider3.jpg)no-repeat 0px 0px;
     background-size: cover;
     min-height: 755px;
 }
@@ -85,6 +85,7 @@ body{
 .navbar {
     position: sticky;
     top:0;
+    z-index: 1!important;
     min-height: 70px;
     margin-bottom: 0;
     width:100%;
