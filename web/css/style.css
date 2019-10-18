@@ -412,10 +412,49 @@ transition: all 0.7s ease;
     border-radius: 25px;
     color: white;
 }
+.port-img .row{
+
+    margin-top: 3%;
+}
+
 .port-img img{
     height: 300px;
     width: 350px;
-    margin-top: 3%;
+}
+
+.display-state{
+    visibility: hidden;
+}
+
+.blog{
+    margin-left:6%;
+    margin-bottom: 3%;
+}
+.blog h2{
+    text-align: center;
+}
+.blog img{
+    height: 200px;
+    width: 275px;
+    display: flex;
+}
+.blog .card:hover{
+    box-shadow: 1px 1px 15px 1px #652840;
+}.blog .card{
+     width: fit-content;
+ }
+.blog .card-body{
+    margin-left: 4%;
+}
+.blog .card-title{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.blog .card-text{
+    width: 150px;
+    line-height:30px;
 }
 .hot-offer {
     text-align: center;
