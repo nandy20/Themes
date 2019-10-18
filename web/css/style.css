@@ -235,6 +235,8 @@ a.button2 {
 .about {
     padding: 4em 0;
 	text-align: center;
+    margin-top: 4%;
+    background-color: whitesmoke;
 }
 .test1 {
 position:relative;
@@ -256,12 +258,18 @@ overflow:hidden;
 .textbox p{
    font-size: 1em;
   color: #fff;
+    margin-left:17%;
+    font-family: 'Sail-Regular';
+    font-weight: 600;
+    text-transform: capitalize;
   text-align: center;
 }
 .textbox h4 {
   font-size: 1.5em;
   text-align: center;
   margin-bottom:0.5em;
+    margin-left:17%;
+    font-family: 'Sail-Regular';
   color: #fff;
   font-weight: 600;
   text-transform: capitalize;
@@ -369,6 +377,28 @@ transition: all 0.7s ease;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 3em;
+}
+
+.portfolio h2{
+    text-align: center;
+}
+.port-list{
+    text-align:center;
+}
+
+.port-list ul li{
+    display: inline-block;
+    margin-right: 2%;
+    font-family: 'Sail-Regular';
+    font-size: 20px;
+}
+.port-list ul li a:hover{
+    background-color:#BF9280 ;
+    text-decoration: none;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 25px;
+    color: white;
 }
 .hot-offer {
     text-align: center;
