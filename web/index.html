@@ -12,8 +12,11 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+			integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
 	<script>
 		$(window).on('scroll',function () {
 			if($(window).scrollTop()){
@@ -27,6 +30,10 @@
 			var d=document.getElementById('port1');
 			d.className +='display-state';
 		});
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+
 	</script>
 </head>
 <body>
@@ -50,17 +57,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html">Wedding ceramony</a></li>
-            <li><a href="services.html">Birthday parties</a></li>
-            <li><a href="services.html">Business meetings</a></li>
-          </ul>
-        </li>
-		<li><a href="wedding.html">Blog</a></li>
-		  <li><a href="wedding.html">Testimonials</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="#blog">Blog</a></li>
+		  <li><a href="services.html">Services</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		  <li><a href="contact.html">SignIn/SignUp</a></li>
       </ul>
@@ -146,7 +146,7 @@
 
 
 				<!--about-->
-					<div class="about">
+					<div class="about" id="about">
 					<div class="container">
 						<div class="about-head">
 						<h2 >about us</h2>
@@ -160,7 +160,7 @@
 								<span class="read"><a href="about.html">Read More</a></span></p>
 					    </div>
 					<div class="about-grids">
-						<div class="col-md-4 about-grid test1 hovereffect">
+						<div id="anicheck" class="col-md-4 about-grid test1 hovereffect anicheck">
 						<img src="images/p1.jpg"  class="img-responsive" alt="/">
 							<div class="textbox">
 								<h4>Eventoria</h4>
@@ -187,11 +187,10 @@
 				</div>
 			</div>
 		<!--Portfolio-->
-		    <div class="portfolio">
+		    <div class="portfolio" id="portfolio">
 					<div class="about-head">
 						<h2>Portfolio</h2>
 					</div>
-
 				   <div class="port-list">
 					   <ul>
 						   <li><a href="#" id="europe">All </a></li>
@@ -199,60 +198,59 @@
 						   <li><a href="#">Asia</a></li>
 						   <li><a href="#">Africa</a></li>
 						   <li><a href="#">Antartica</a></li>
-
 					   </ul>
 				   </div>
 				<div class="port-img">
 					<div class="row " id="port1">
 						<div class="hovereffect ">
-							<img src="images/europe.jpg" class="col-md-4">
+							<img src="images/europe.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 						<div class="hovereffect">
-							<img src="images/europe1.jpg" class="col-md-4">
+							<img src="images/europe1.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 						<div class="hovereffect">
-							<img src="images/europe3.jpg" class="col-md-4">
+							<img src="images/europe3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 					</div>
 					<div class="row ">
 						<div class="hovereffect">
-							<img src="images/asia1.jpg" class="col-md-4">
+							<img src="images/asia1.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 						<div class="hovereffect">
-							<img src="images/asia2.jpg" class="col-md-4">
+							<img src="images/asia2.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 						<div class="hovereffect">
-							<img src="images/asia3.jpg" class="col-md-4">
+							<img src="images/asia3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 					</div>
 					<div class="row ">
 						<div class="hovereffect">
-							<img src="images/europe.jpg" class="col-md-4">
+							<img src="images/europe.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 						<div class="hovereffect">
-							<img src="images/europe1.jpg" class="col-md-4">
+							<img src="images/europe1.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 						<div class="hovereffect">
-							<img src="images/europe3.jpg" class="col-md-4">
+							<img src="images/europe3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 					</div>
 					<div class="row ">
 						<div class="hovereffect">
-							<img src="images/asia1.jpg" class="col-md-4">
+							<img src="images/asia1.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 						<div class="hovereffect">
-							<img src="images/asia2.jpg" class="col-md-4">
+							<img src="images/asia2.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 						<div class="hovereffect">
-							<img src="images/asia3.jpg" class="col-md-4">
+							<img src="images/asia3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 					</div>
-                    <br>
+
 				</div>
-
+				<button>Let's Discuss</button>
 			</div>
-
-		<div class="blog">
+       <hr >
+		<div class="blog" id="blog">
 			<div class="about-head">
 				<h2>Blog</h2>
 			</div>
@@ -263,7 +261,8 @@
 					</div>
                     <div class="card-body">
 						<p class="card-title">Ideadunes... </p>
-						<p class="card-text"> Travel marketplace empowers corporate..</p>
+						<p class="card-text"> Travel marketplace empowers corporate.. </p>
+						<p><a href="#" class="read">Read More</a></p>
 					</div>
 
 				</div>
@@ -274,6 +273,7 @@
 					<div class="card-body">
 						<p class="card-title">Ideadunes... </p>
 						<p class="card-text"> Travel marketplace empowers corporate..</p>
+						<p><a href="#" class="read">Read More</a></p>
 					</div>
 
 				</div>
@@ -284,6 +284,7 @@
 					<div class="card-body">
 						<p class="card-title">Ideadunes... </p>
 						<p class="card-text"> Travel marketplace empowers corporate..</p>
+						<p><a href="#" class="read">Read More</a></p>
 					</div>
 
 				</div>
@@ -294,10 +295,12 @@
 					<div class="card-body">
 						<p class="card-title">Ideadunes... </p>
 						<p class="card-text"> Travel marketplace empowers corporate..</p>
+						<p><a href="#" class="read">Read More</a></p>
 					</div>
 
 				</div>
 			</div>
+			<button>More blogs</button>
 		</div>
 
 			<!--indicate-->
@@ -326,7 +329,8 @@
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-top">
-					<p> &copyright; 2015 Eventoria . All Rights Reserved | Design by Shubhangi,Sandesh&Aishwarya</p>
+					<p style="text-align: center"> &copyright; 2019 All Rights Reserved </p>
+					<p style="float: right">Design by Ideadunes</p>
 				</div>
 			</div>
 		</div>

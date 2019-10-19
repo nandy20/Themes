@@ -7,6 +7,9 @@
     font-family: 'OpenSans-Regular';
     src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
 }
+html{
+    scroll-behavior: smooth;
+}
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -304,8 +307,8 @@ transition: all 0.7s ease;
     border-radius: 20px;
     justify-content: center;
     position: relative;
-    bottom:7%;
-    left:10%;
+    bottom:5%;
+    left:8%;
 }
 .overview-title{
     font-size:32px;
@@ -387,10 +390,6 @@ transition: all 0.7s ease;
     margin-bottom: 3em;
 }
 
-.portfolio{
-    margin-left:13%;
-    justify-content: center;
-}
 .portfolio h2{
     text-align: center;
 }
@@ -413,20 +412,53 @@ transition: all 0.7s ease;
     color: white;
 }
 .port-img .row{
-
+    margin-left: 13%;
     margin-top: 3%;
 }
+.port-img{
+    background: url(../images/slider2.jpg)no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 755px;
+    background-attachment: fixed;
 
+}
 .port-img img{
     height: 300px;
     width: 350px;
 }
+.portfolio button, .blog button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 30px;
+    border: 2px solid #652840;
+    margin-left: 39%;
+    margin-top: 3%;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+}
 
+.blog button:hover{
+    background-color: #652840;
+    color: white;
+}
+.portfolio button:hover{
+    background-color: #652840;
+    color: white;
+}
+.port-text{
+    text-align: center;
+    position: relative;
+    bottom: 100%;
+}
 .display-state{
     visibility: hidden;
 }
 
 .blog{
+    margin-top: 5%;
     margin-left:6%;
     margin-bottom: 3%;
 }
@@ -455,6 +487,7 @@ transition: all 0.7s ease;
 .blog .card-text{
     width: 150px;
     line-height:30px;
+    font-weight: 700;
 }
 .hot-offer {
     text-align: center;
@@ -806,6 +839,24 @@ span.glyphicon.glyphicon-send {
 	line-height:1.8em;
 	color:#999;
 	margin:1em 0 0
+}
+.main-grid { /* changed these */
+    text-align: center;
+    width:65%;
+    height:400px;
+    box-shadow: 1px 1px 7px  rgba(0, 0, 0, 0.2);
+    margin:60px auto 50px auto;
+    border-radius:15px;
+    padding-top:50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-grid p{
+    font-size:1.2em;
+    line-height:1.8em;
+    color:#999;
+    margin:1em 0 0;
+
 }
 .choose-grids {
   margin-top: 3em;
