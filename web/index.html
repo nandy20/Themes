@@ -17,24 +17,7 @@
 <script src="js/bootstrap.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
 			integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
-	<script>
-		$(window).on('scroll',function () {
-			if($(window).scrollTop()){
-				document.getElementById('nav').style.backgroundColor="#652840";
-			}
-			else{
-				document.getElementById('nav').style.backgroundColor="#0009";
-			}
-		});
-		document.getElementById('europe').addEventListener('click',function () {
-			var d=document.getElementById('port1');
-			d.className +='display-state';
-		});
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
-		});
 
-	</script>
 </head>
 <body>
 
@@ -62,7 +45,7 @@
 		<li><a href="#blog">Blog</a></li>
 		  <li><a href="services.html">Services</a></li>
 		<li><a href="contact.html">Contact</a></li>
-		  <li><a href="contact.html">SignIn/SignUp</a></li>
+		  <li><a href="signup.html">SignIn/SignUp</a></li>
       </ul>
 
       </div><!-- /.navbar-collapse -->
@@ -78,7 +61,7 @@
 										<p>At Ideadunes we believe in client satisfaction for which we are using an internal system for...</p>
 											<div class="button">
 												<a href="services.html" class="button1 hvr-rectangle-in">get started</a>
-												<a href="#" class="button2 hvr-rectangle-in">read more</a>
+												<a href="" class="button2 hvr-rectangle-in">read more</a>
 											</div>
 
 									</div>
@@ -193,11 +176,11 @@
 					</div>
 				   <div class="port-list">
 					   <ul>
-						   <li><a href="#" id="europe">All </a></li>
-						   <li><a href="#">Europe </a></li>
-						   <li><a href="#">Asia</a></li>
-						   <li><a href="#">Africa</a></li>
-						   <li><a href="#">Antartica</a></li>
+						   <li><a href="#port1" id="europe">All </a></li>
+						   <li><a href="#port2">Europe </a></li>
+						   <li><a href="#port3">Asia</a></li>
+						   <li><a href="#port4">Africa</a></li>
+						   <li><a href="#port1">Antartica</a></li>
 					   </ul>
 				   </div>
 				<div class="port-img">
@@ -212,7 +195,7 @@
 							<img src="images/europe3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 					</div>
-					<div class="row ">
+					<div class="row " id="port2">
 						<div class="hovereffect">
 							<img src="images/asia1.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
@@ -223,7 +206,7 @@
 							<img src="images/asia3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
 					</div>
-					<div class="row ">
+					<div class="row " id="port3">
 						<div class="hovereffect">
 							<img src="images/europe.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
@@ -234,7 +217,7 @@
 							<img src="images/europe3.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Europe">
 						</div>
 					</div>
-					<div class="row ">
+					<div class="row " id="port4">
 						<div class="hovereffect">
 							<img src="images/asia1.jpg" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Asia">
 						</div>
@@ -247,9 +230,8 @@
 					</div>
 
 				</div>
-				<button>Let's Discuss</button>
+				<button class="btn" id="discuss">Let's Discuss</button>
 			</div>
-       <hr >
 		<div class="blog" id="blog">
 			<div class="about-head">
 				<h2>Blog</h2>
@@ -334,6 +316,22 @@
 				</div>
 			</div>
 		</div>
+<script>
+	$(window).on('scroll',function () {
+		if($(window).scrollTop()){
+			document.getElementById('nav').style.backgroundColor="#652840";
+		}
+		else{
+			document.getElementById('nav').style.backgroundColor="#0009";
+		}
+	});
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	});
+	document.getElementById("discuss").addEventListener('click',function () {
+		location.href="contact.html";
+	});
 
+</script>
 </body>
 </html>

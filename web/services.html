@@ -2,122 +2,251 @@
 <html>
 <head>
 
-<title>Eventorio</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<title>Eventorio</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		$(window).on('scroll',function () {
+			if($(window).scrollTop()){
+				document.getElementById('nav').style.backgroundColor="#652840";
+			}
+			else{
+				document.getElementById('nav').style.backgroundColor="#0009";
+			}
+		});
+		document.getElementById('europe').addEventListener('click',function () {
+			var d=document.getElementById('port1');
+			d.className +='display-state';
+		});
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+
+	</script>
 </head>
 <body>
 
 <!--header-->
-	<div class="header">
+<div class="header">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-brand">
+							<h1><a href="index.html">Eventoria</a></h1>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="about.html">About</a></li>
+							<li ><a href="index.html" >Portfolio</a></li>
+							<li><a href="index.html">Blog</a></li>
+							<li  class="active"><a href="#">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="signup.html">SignIn/SignUp</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+<!--header-->
+<div class="container">
+	<section class="slider">
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<div class="slider-info">
+						<h3>Our services</h3>
+						<p>At Ideadunes we believe in client satisfaction for which we are using an internal system for...</p>
+					</div>
+				</li>
+				<li>
+					<div class="slider-info">
+						<h3>Our Services</h3>
+						<p>20 years of travel management experience</p>
+					</div>
+				</li>
+				<li>
+					<div class="slider-info">
+						<h3>Our Services</h3>
+						<p> Top travel management company in Pune</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+		});
+		$(window).load(function(){
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- FlexSlider -->
+</div>
+</div>
+<!--services-->
+<div class="content">
+	<div class="services">
 		<div class="container">
-			<div class="header-top">
-				<nav class="navbar navbar-default">
-  <div class="container-fluid">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <div class="navbar-brand">
-      <h1><a href="index.html">Eventoria</a></h1>
-	  </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html">Wedding ceramony</a></li>
-            <li><a href="services.html">Birthday parties</a></li>
-            <li><a href="services.html">Business meetings</a></li>
-          </ul>
-        </li>
-		<li><a href="wedding.html">Gallery</a></li>
-		<li><a href="contact.html">Contact</a></li>
-      </ul>
-      
-      </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+			<h2>services</h2>
+			<div class="services-grids">
+				<div class="col-md-4 services-grid">
+					<div class="ser1">
+						<img src="images/europe.jpg" class="img-responsive"  style="width: 350px;height:230px" alt="" / >
+						<a href="wedding.html"><h4>Europe</h4></a>
+						<a href="wedding.html"><p>The word rings a thousand beautiful experiences. Right from its ancient
+							history, culture, architecture, entertainment to art.Europe Tour Packages promises delightful
+							travel in its own righteous sense. Europe Tours includes tours to Netherlands, Swiss, Italy,
+							Austria, Ireland, Spain and Scandinavian countries among other popular destinations. Europe
+							Tour Packages with Kesari got experiences well suited for any type of traveller</p><br></a>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid">
+					<div class="ser1">
+						<img src="images/asia1.jpg" class="img-responsive"  style="width: 350px;height:230px" alt="" />
+						<a href="wedding.html"><h4>Asia</h4></a>
+						<a href="wedding.html"><p>Retaining a lot of its old-world charm, many people in this
+							country still work with cattle to earn a living. With the tallest mountain peak in the world,
+							the Mount Everest in its embrace, the South Asian region of Asia has India - the largest
+							country in this region with a population of over one billion people,From Macau to Mumbai, know
+							everything about Asia tourism in our travel guide. Find out top Asia travel destinations, popular
+							things to do in Asia</p><br></a>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid">
+					<div class="ser1">
+						<img src="images/asia3.jpg" class="img-responsive"  style="width: 350px;height:230px" alt="" />
+						<a href="wedding.html"><h4>Africa</h4></a>
+						<a href="wedding.html"> <p>Venture into the Wild ! South Africa is one of the most enthralling destinations
+							for travellers from all over the world, as it has seemingly endless numbers of natural parks, beautiful
+							mountains and lunar-like landscapes vigilantly carved by nature. With Savannas and never ending Safari
+							adventures, South Africa Kenya Tours are a must. From the wild grasslands of Kruger Park to prehistoric
+							caves, from the pristine Boulders Beach to the Gold Reef City, you really do have a world in one country,</p></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			
-			</div>
+		</div>
 	</div>
-	<!--header-->
-	<!--services-->
-		<div class="content">
-			<div class="services">
-				<div class="container">
-					<h2>services</h2>
-					<div class="services-grids">
-						<div class="col-md-4 services-grid">
-							<div class="ser1">
-								 <img src="images/s1.jpg" class="img-responsive" alt="" />
-								 <h4>Weddings</h4>
-								 <p>luxury wedding planning company based in Western India, renowned for creating some of the most elegant, sophisticated and well-organized wedding events.</p>
-							</div>
-						</div>
-						<div class="col-md-4 services-grid">
-							<div class="ser1">
-								<img src="images/s2.jpg" class="img-responsive" alt="" />
-								 <h4>Birthday parties</h4>
-								 <p>Kiddie Parties are getting more elaborate and original everyday. Sometimes a birthday party with a simple theme just isn’t enough. If you would like to create a birthday party that is special and unique, and unforgettable,</p>
-							</div>
-						</div>
-						<div class="col-md-4 services-grid">
-							<div class="ser1">
-								<img src="images/s3.jpg" class="img-responsive" alt="" />
-								 <h4>Business Mettings</h4>
-								 <p>plans and executes seminars, conferences and meetings, entertainment for gala dinners, cocktails, theme parties, product launch evenings, team building and special events at the most suitable venue</p>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>	
-				</div>	
-			</div>	
-				<div class="professional">
-					<div class="container">
-						<h3>professional services</h3>
-							<div class="professional-grids">
-   								 <div class="col-md-4 professional-grid">
-								<img src="images/s4.jpg" class="img-responsive" alt="" />
-   								</div>
-   							<div class="col-md-8 professional-grid1">
-   								<h4>Destination Wedding</h4>
-   								<p>Lots of times couples choose to do a destination wedding because they have a special connection to a particular place. They choose to celebrate their love in a place they love and also share that love with their guests. It could be the culture or the people or just the overall vibe of the destination that you love.</p>
-   								<p>We provide service over 2000 miles of network in India and abroad too in contries like Frane,Enfland,Netherlands,Swizzerlands.</p>
-   							</div>
-   					<div class="clearfix"> </div>
-   				</div>
-   			</div>	
-		</div>	
-		
-		<div class="footer-section">
-			<div class="container">
-				<div class="footer-top">
-					<p> &copyright; 2015 Eventoria . All Rights Reserved | Design by Shubhangi,Sandesh&Aishwarya</p>
+	<div class="professional">
+		<H3>Products & Offerings</h3><br>
+		<div class="about-grids">
+			<div class="col-md-4 about-grid test1 hovereffect">
+				<img src="images/download.jpg"  class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>FOREX CARDS</h4>
+					<p>Multi Countries Currency Availabe(16 Major Currencies) 24 X 7 Currency Loading Available</p>
+				</div>
+			</div>
+			<div class="col-md-4 about-grid test1 hovereffect">
+				<img src="images/insurence.jpg"  class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>TRAVEL ISSUERENCE</h4>
+					<p>Cashless Treatment Abroad Quick Claim Settlement</p>
+				</div>
+			</div>
+			<div class="col-md-4 about-grid test1 hovereffect">
+				<img src="images/notes.jpg"  class="img-responsive" alt="/" >
+				<div class="textbox">
+					<h4>CURRENCY NOTES</h4>
+					<p>Buy & Sell Currencies Of All Countries<br></p>
 				</div>
 			</div>
 		</div>
-	
+		<br>
+
+	</div>
+		<div class="professional" style="margin-top: 13%">
+			<div class="container" >
+				<h3 ><br>professional Services</h3>
+				<div class="professional-grids">
+					<div class="col-md-4 professional-grid">
+						<img src="images/s4.jpg" class="img-responsive" alt="" />
+					</div>
+					<div class="col-md-8 professional-grid1">
+						<h4>Customize youe Trip</h4>
+						<p>Lots of times we  choose to go for a Trip only with your loved ones. We offer you the best customized trips and toura according to your prefrence,requirements and many more. You can choose hotel,tranportation og your choice and budget and places that you are comfortable to spent with family,friends,co-oprete trips etc. </p>
+						<p>We provide service over 2000 miles of network in India and abroad too in contries like Frane,Enfland,Netherlands,Swizzerlands.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+
+		<div class="professional-grids">
+			<div class="col-md-4 professional-grid">
+				<img src="images/primium.jpg" style="width: 350px;height:230px" class="img-responsive" alt="" />
+			</div>
+			<div class="col-md-8 professional-grid1">
+				<h4>Premium Trips</h4>
+				<p>Exprience the Glimps of stay in worlds premium Hotels,Premium trasportation packages</p>
+				<p>We provide service in over 250 premium 5 star & star hotels,kings paradices,471 cruizes,highly expensive flight buisness class packages and many more within Discounted prize from our network all over the globe</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+			</div>
+		</div>
+
+	<!--indicate-->
+	<div class="indicate">
+		<div class="container">
+			<div class="indicate-grids">
+				<div class="col-md-3 indicate-grid">
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Shivaginagar,Pune</p>
+				</div>
+				<div class="col-md-3 indicate-grid">
+					<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Telephone :7447262508</p>
+				</div>
+				<div class="col-md-3 indicate-grid">
+					<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:eventoria@gmail.com"> eventoria@mail.com</a></p>
+				</div>
+				<div class="col-md-3 indicate-grid">
+					<p><span class="glyphicon glyphicon-send" aria-hidden="true"></span>FAX :9422223622</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--indicate-->
+</div>
+
+
+
+<div class="footer-section">
+	<div class="container">
+		<div class="footer-top">
+			<p style="text-align: center"> &copyright; 2019 All Rights Reserved </p>
+			<p style="float: right">Design by Ideadunes</p>
+		</div>
+	</div>
+</div>
 </body>
 </html>

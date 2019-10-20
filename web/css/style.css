@@ -767,6 +767,7 @@ span.glyphicon.glyphicon-send {
   position: relative;
 }
 .team h3 {
+    margin-top: 3%;
   font-size: 3.5em;
   color: #652840;
   font-family: 'Sail-Regular';
@@ -840,10 +841,34 @@ span.glyphicon.glyphicon-send {
 	color:#999;
 	margin:1em 0 0
 }
-.main-grid { /* changed these */
+
+.why {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3.5em;
+    color: #652840;
+    font-family: 'Sail-Regular';
+    text-transform: capitalize;
+}
+.img-resize {
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+.caption {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.explain {
+    margin-bottom: 100px;
+}
+.main-grid {
     text-align: center;
     width:65%;
-    height:400px;
+    height:350px;
     box-shadow: 1px 1px 7px  rgba(0, 0, 0, 0.2);
     margin:60px auto 50px auto;
     border-radius:15px;
@@ -858,6 +883,7 @@ span.glyphicon.glyphicon-send {
     margin:1em 0 0;
 
 }
+
 .choose-grids {
   margin-top: 3em;
 }
@@ -946,6 +972,9 @@ span.glyphicon.glyphicon-send {
 }
 .professional{
 	padding:0em 0 4em ;
+}
+.professional .about-grids{
+    margin-left: 5%;
 }
 .professional h3 {
     font-size: 3.5em;
@@ -1414,30 +1443,94 @@ a.button2 {
     float: left;
     width: 33.3%;
 }
-.services-grid {
-    float: left;
-    width: 33.3%;
-}
-.ser1 {
-    background: #652840;
-    padding: 1em;
-}
-.professional-grid {
-    float: left;
-    width: 40%;
-}
-.professional-grid1 {
-    float: left;
-    width: 60%;
-}
-.ser-list {
-    float: left;
-    width: 33.3%;
-}
-.ser-list ul li a {
-    font-size: 0.9em;
-    padding: 6px 1px;
-}
+    .services {
+        padding: 4em 0;
+        text-align: center;
+    }
+    .services h2 {
+        font-size: 3.5em;
+        color: #652840;
+        font-family: 'Sail-Regular';
+        text-transform: capitalize;
+        text-align: center
+    }
+    .services p {
+        font-size: 1em;
+        color: #eee;
+        line-height: 1.8em;
+    }
+    .services h4 {
+        font-size: 1.5em;
+        text-transform: capitalize;
+        margin: 0.6em 0 0.4em;
+        color: #fff;
+    }
+    .services-grids {
+        margin-top: 3em;
+    }
+    .ser1 {
+        background: #652840;
+        padding: 2em;
+    }
+    .ser1:hover {
+        background:#bf9280;
+    }
+    .professional{
+        padding:0em 0 4em ;
+    }
+    .professional h3 {
+        font-size: 3.5em;
+        color: #652840;
+        font-family: 'Sail-Regular';
+        text-transform: capitalize;
+        text-align: center
+    }
+    .professional-grid1 h4 {
+        font-size: 1.5em;
+        text-transform: capitalize;
+        color: #bf9280;
+    }
+    .professional-grid1 p {
+        font-size: 1em;
+        padding: .5em 0;
+        color: #999;
+        line-height: 2em;
+    }
+    .professional-grids {
+        margin-top: 3em;
+    }
+    .service-list {
+        padding: 4em 0;
+        background-color: #bf9280;
+    }
+    .service-list h3 {
+        font-size: 3.5em;
+        color: #fff;
+        font-family: 'Sail-Regular';
+        text-transform: capitalize;
+        text-align: center
+    }
+    .ser-list ul li{
+        list-style-type: none;
+    }
+    .ser-list ul li a {
+        color: #eee;
+        font-size: 1em;
+        padding: 6px 24px;
+        background: url(../images/list-arrow.png) no-repeat 0px 10px;
+        line-height:2em;
+        text-decoration:none;
+    }
+    .ser-list ul li a:hover {
+        color: #652840;
+    }
+    .service-grids {
+        margin-top: 3em;
+    }
+    .professional-grids .professional-grid img{
+        height: 300px!important;
+        width:300px!important;
+    }
 .gallery-grid {
     float: left;
     width: 33.3%;
